@@ -1,0 +1,125 @@
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    background-color: #dab2fb;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: 100;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 70;
+  }
+
+  #myBtn:hover {
+    background-color: rgb(158, 165, 255);
+  }
+
+  .mascara{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 90;
+  }
+
+  .form-cont{
+    background-color: white;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  #formcont{
+    display: block;
+  }
+
+  #botao-fechar {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+  }
+
+  #botao-fechar:hover{
+    font-size: 20px;
+  }
+
+
+form label{
+    display:block;
+    font-size: 18px;
+    margin: 15px 0 5px;
+    margin-left: 0px;
+}
+
+#botao-add {
+  margin-top: 10px;
+  height: 40px;
+  margin-left: 80%;
+}
+
+#botao-add:hover{
+  color: red;
+}
+
+.input-padrao{
+  width: 400px;
+  height: 25px;
+}
+
+.input-descricao{
+  width: 400px;
+  line-height: 50px;
+}
+
+.pin-acesso{
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+#pinacesso{
+  display: block;
+}
+
+.pin-acesso label{
+  display:block;
+  font-size: 25px;
+  top: 100px;
+  left: 50%;
+  height: 30px;
+}
+
+.pin-acesso input {
+  width: 300px;
+  height: 25px;
+  top: 100px;
+  left: 50%;
+}
+
+#exibirnoticias {
+  display: none;
+}
+
