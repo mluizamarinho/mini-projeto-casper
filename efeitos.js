@@ -81,7 +81,7 @@ function ultimaNoticia(){
 
             let categoria = document.createElement("h1");
             categoria.textContent = noticias[i].category;
-            not.appendChild(category)
+            not.appendChild(categoria)
 
             let urlImagem = document.createElement("h2");
             urlImagem.textContent = noticias[i].imgUrl;
@@ -112,7 +112,7 @@ function listarNoticias(){
         
         let categoria = document.createElement("h1");
         categoria.textContent = noticias[i].category;
-        not.appendChild(category)
+        not.appendChild(categoria)
 
 
         let urlImagem = document.createElement("h2");
