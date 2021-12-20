@@ -121,5 +121,19 @@ form label{
 
 #exibirnoticias {
   display: none;
+  text-align: center;
+  font-weight: bold;
 }
+
+
+#exibirnoticias h2{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#exibirnoticias h1{
+  font-weight: bold;
+  font-size: 30px;
+}
+
 

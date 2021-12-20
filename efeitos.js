@@ -78,20 +78,25 @@ function enviarNoticias(){
 function ultimaNoticia(){
     listarNoticiaAPI().then((noticias)=>{
         for(let i = noticias.length - 1; i > noticias.length - 2; i++){
-            let urlImagem = document.createElement("h1");
+
+            let categoria = document.createElement("h1");
+            categoria.textContent = noticias[i].category;
+            not.appendChild(category)
+
+            let urlImagem = document.createElement("h2");
             urlImagem.textContent = noticias[i].imgUrl;
             not.appendChild(urlImagem)
     
     
-            let titulo = document.createElement("h1");
+            let titulo = document.createElement("h2");
             titulo.textContent = noticias[i].title;
             not.appendChild(titulo)
     
-            let descricao = document.createElement("h1");
+            let descricao = document.createElement("h2");
             descricao.textContent = noticias[i].description;
             not.appendChild(descricao)
     
-            let urlT = document.createElement("h1");
+            let urlT = document.createElement("h2");
             urlT.textContent = noticias[i].url;
             not.appendChild(urlT)
     
@@ -103,21 +108,27 @@ function listarNoticias(){
     listarNoticiaAPI().then((noticias)=>{
     for(let i = 0; i < noticias.length; i++){
         
-        console.log(noticias.length)
-        let urlImagem = document.createElement("h1");
+
+        
+        let categoria = document.createElement("h1");
+        categoria.textContent = noticias[i].category;
+        not.appendChild(category)
+
+
+        let urlImagem = document.createElement("h2");
         urlImagem.textContent = noticias[i].imgUrl;
         not.appendChild(urlImagem)
 
 
-        let titulo = document.createElement("h1");
+        let titulo = document.createElement("h2");
         titulo.textContent = noticias[i].title;
         not.appendChild(titulo)
 
-        let descricao = document.createElement("h1");
+        let descricao = document.createElement("h2");
         descricao.textContent = noticias[i].description;
         not.appendChild(descricao)
 
-        let urlT = document.createElement("h1");
+        let urlT = document.createElement("h2");
         urlT.textContent = noticias[i].url;
         not.appendChild(urlT)
 
