@@ -1,7 +1,7 @@
 async function adicionarNoticiaAPI(body){
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
-    let resposta =  await fetch("http://localhost:3000/news",{
+    let resposta =  await fetch("https://bot-casper-elife.herokuapp.com/news",{
         method:"POST",
         body:JSON.stringify(body),
         headers: headers
@@ -20,7 +20,7 @@ async function adicionarNoticiaAPI(body){
 async function listarNoticiaAPI(){
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
-    let resposta =  await fetch("http://localhost:3000/news",{
+    let resposta =  await fetch("https://bot-casper-elife.herokuapp.com/news",{
         method:"GET",
         headers: headers
     })
