@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Casper notícias</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+
+    <body>
+        <header>
+            <h1 class="titulo">Feed de notícias</h1>
+        </header>
+
+        <div id="exibirnoticias">
+            
+        </div>
+
+        <div class="pin-acesso" id = "pinacesso">
+            <label for="pin">Insira o PIN de acesso</label>
+            <input type="password" id="pin">
+            <input type="submit" value="Enviar" class="enviar" id="clique" onclick="mostrarDepoisPin()">
+        </div>
+
+
+        <div class="mascara" id="mascara">
+            <div class="form-cont" id="formcont">
+                <div id="botao-fechar">X</div>
+                <form>
+                    <div class="input-adic">
+                        <label for="link-imagem">Link para imagem</label>
+                        <input type="text" id="link-imagem" class="input-padrao">
+                    </div>
+
+                    <div class="input-adic">
+                        <label for="titulo-not">Título</label>
+                        <input type="text" id="titulo-not" class="input-padrao">
+                    </div>
+
+                    <div class="input-adic">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" id="descricao" class="input-descricao">
+                    </div>
+
+                    <div class="input-adic">
+                        <label for="tema">Tema</label>
+                        <select id="tema" value="esporte" class="input-padrao">
+                            <option value="esporte">Esporte</option>
+                            <option value="politica">Política</option>
+                            <option value="entretenimento">Entretenimento</option>
+                            <option value="famosos">Famosos</option>
+                        </select>
+                    </div>
+
+                    <div class="input-adic">
+                        <label for="link-noticia">Link</label>
+                        <input type="text" id="link-noticia" class="input-padrao">
+                    </div>
+
+                    <button id="botao-add">Adicionar</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div>
+            <ul class="botao-principal">
+                <button id="myBtn" title="Adicione Noticias">Adicione Noticias</button>
+            </ul>
+        </div>
+    
+    </body>
+
+    <script src=api.js></script>
+
+    <script src=efeitos.js></script>
+
+</html>   
